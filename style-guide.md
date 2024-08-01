@@ -1,5 +1,5 @@
 # Front-end Style Guide
-
+##Live URL Link - https://matt2282.github.io/article-preview-component/
 ## Layout
 
 The designs were created to the following widths:
