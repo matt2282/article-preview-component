@@ -121,38 +121,16 @@ h2 {
   filter: brightness(10);
   border-radius: 0px;
 }
-.profile-footer-share-desktop {
+.hidden{
   display: none;
-  color: hsl(212, 23%, 69%);
-  background-color: hsl(217, 19%, 35%);
-  padding: 1rem;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  font-size: 1px;
-  letter-spacing: 5px;
-  gap: 15px;
-  align-items: center;
-  margin: 0px;
-  height: 30px;
-  position: absolute;
-  left: 79.6%;
-  bottom: 118px;
-  border-radius: 0.75rem;
 }
-.profile-footer-share-desktop img {
-  border-radius: 0px;
+.profile-footer .circle.darkBackgroundButton {
+  background-color: hsl(214, 17%, 51%);
 }
-.profile-footer-share-desktop h1 {
-  font-size: 14px;
+.filterBright{
+  filter: brightness(10);
 }
-.profile-footer-share-desktop::after {
-  left: 45%;
-  bottom: -45%;
-  content: "";
-  position: absolute;
-  border: 15px solid transparent;
-  border-top-color: hsl(217, 19%, 35%);
-}
+
 @media only screen and (min-width: 769px) {
   .container {
     flex-direction: row;
@@ -161,8 +139,10 @@ h2 {
     position: relative;
   }
   .profile-footer {
+    display: flex;
     padding: 0px;
   }
+ 
   .all-content {
     padding: 2.5rem;
     padding-right: 3rem;
@@ -190,5 +170,33 @@ h2 {
     object-fit: cover;
     height: 100%;
     object-position: 0%;
+  }
+  .profile-footer-share {
+    color: hsl(212, 23%, 69%);
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 1px;
+    letter-spacing: 5px;
+    gap: 15px;
+    align-items: center;
+    margin: 0px;
+    height: 30px;
+    position: absolute;
+    left: 79.6%;
+    bottom: 118px;
+    border-radius: 0.75rem;
+  }
+  .profile-footer-share .circle{
+    display: none;
+  }
+  .profile-footer-share::after {
+    left: 45%;
+    bottom: -45%;
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-top-color: hsl(217, 19%, 35%);
   }
 }
